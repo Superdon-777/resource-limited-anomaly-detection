@@ -61,13 +61,14 @@ Things to know about the data:
 | 28–29 | Did the contracts or the buyers change after the reforms? |
 | 30–31 | Is there usable data before 2024? Placebo test on fake reform dates, and the July check on all outcomes |
 | 32 | A rounding check on one p value |
+| 33 | HAC (Newey-West) standard errors on the main models, as a check on the plain OLS results |
 
 ## Settings I chose
 
 - Isolation Forest contamination: 5%, with `random_state=42`. I also test 1% and 10%.
 - Z-score flag: more than 3 standard deviations.
 - Reform dates: August 2024 (portal) and September 2024 (levy).
-- Standard errors: ordinary least squares, with no autocorrelation correction. Durbin–Watson statistics are between 1.9 and 2.5.
+- Standard errors: ordinary least squares, with a Newey-West (HAC) check at one and two lags in Step 33. Durbin–Watson statistics are between 1.9 and 2.5.
 
 ## Files the notebook saves
 
