@@ -77,6 +77,10 @@ The notebook writes a few small CSV files as it runs: `monthly_flag_rate_2024_20
 
 Python in Google Colab, with these package versions: pandas 2.2.3, scikit-learn 1.6.1 and statsmodels 0.15.0. The notebook also uses NumPy, SciPy and matplotlib.
 
+## Licence
+
+The code is released under the MIT licence (see `LICENSE`). The data keep the terms of their original source, the Kenya PPRA and the Open Contracting Partnership registry.
+
 ## How to cite
 
 Golanda, D. P. (2026). *Kenya PPRA public procurement data, 2024–2025* [Data set]. Zenodo. https://doi.org/10.5281/zenodo.21191468
